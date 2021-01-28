@@ -156,12 +156,7 @@
               </p>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">
-              <i class="far fa-comment nav-icon"></i>
-              <p>Chat</p>
-            </a>
-          </li>
+
           <li class="nav-item">
             <a href="" class="nav-link">
               <i class="far fa-file nav-icon"></i>
@@ -174,12 +169,36 @@
               <p>Appointments</p>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="<?php echo base_url('client/tasks/index'); ?>" class="nav-link <?php echo $this->uri->segment(2) == 'tasks' ? 'active' : ''; ?>">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Tasks</p>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                  Tasks
+                <i class="right fas fa-angle-left"></i>
+              </p>
             </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="<?php echo base_url('client/tasks/index'); ?>" class="nav-link <?php echo $this->uri->segment(3) == 'index' ? 'active' : ''; ?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>All Tasks</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url('client/tasks/my_tasks'); ?>" class="nav-link <?php echo $this->uri->segment(3) == 'my_tasks' ? 'active' : ''; ?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>My Tasks</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url('client/tasks/work_request'); ?>" class="nav-link <?php echo $this->uri->segment(3) == 'work_request' ? 'active' : ''; ?>">
+                  <i class="nav-icon far fa-circle"></i>
+                  <p>Assigned To</p>
+                </a>
+              </li>
+            </ul>
           </li>
+
           <li class="nav-item has-treeview">
             <a href="<?php echo base_url('client/market'); ?>" class="nav-link <?php echo $this->uri->segment(2) == 'market' ? 'active' : ''; ?>">
               <i class="nav-icon fas fa-tree"></i>
@@ -188,7 +207,7 @@
               </p>
             </a>
           </li>
-          <li class="nav-item has-treeview">
+          <li class="nav-item has-treeview <?php echo $this->uri->segment(2) == 'analytics' ? 'menu-open' : ''; ?>">
         <?php //if(in_array('marketAnalytics', $this->permission)) {  ?>
 
             <a href="#" class="nav-link">
@@ -200,7 +219,7 @@
               </p>
             </a>
           <?php //} ?>
-            <ul class="nav nav-treeview">
+            <ul class="nav nav-treeview ">
               <li class="nav-item">
                 <a href="<?php echo base_url('client/analytics/list'); ?>" class="nav-link <?php echo $this->uri->segment(3) == 'list' ? 'active' : ''; ?>">
                   <i class="far fa-circle nav-icon"></i>
@@ -208,7 +227,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?php echo base_url('client/analytics'); ?>" class="nav-link <?php echo $this->uri->segment(3) == 'view' ? 'active' : ''; ?>">
+                <a href="<?php echo base_url('client/analytics/index'); ?>" class="nav-link <?php echo $this->uri->segment(3) == 'index' ? 'active' : ''; ?>">
                   <i class="far fa-circle nav-icon"></i>
                   <p>View Analytics</p>
                 </a>
@@ -225,26 +244,6 @@
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/tables/simple.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Simple Tables</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/tables/data.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>DataTables</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/tables/jsgrid.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>jsGrid</p>
-                </a>
-              </li>
-            </ul>
           </li>
         <?php } ?>
           <?php if(in_array('viewChat', $this->permission) || in_array('accountManagement', $this->permission) ||
@@ -258,7 +257,6 @@
               <i class="nav-icon fas fa-comment-alt"></i>
               <p>
                  Chat
- 
                 <span class="badge badge-info right">2</span>
               </p>
             </a>
@@ -270,11 +268,16 @@
               <i class="nav-icon far fa-user"></i>
               <p>
                   Account Management
-            
               </p>
             </a>
           </li>
            <?php } ?>
+          <li class="nav-item">
+            <a href="pages/tables/data.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Brand Story & Guide</p>
+            </a>
+          </li>
          <li class="nav-item has-treeview">
          <?php if(in_array('viewBrandSettings', $this->permission)) {  ?>
             <a href="#" class="nav-link">
@@ -293,12 +296,7 @@
                   <p>Main Settings</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="pages/tables/data.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Brand Story & Guide</p>
-                </a>
-              </li>
+
               <li class="nav-item">
                 <a href="pages/tables/jsgrid.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>

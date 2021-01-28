@@ -31,7 +31,7 @@
             <div class="card-body" style="display: block;">
               <form role="form" action="<?php echo base_url('client/analytics/add')?>" method="post" enctype="multipart/form-data">
                 <div class="box-body">
-
+                    <input type="hidden" name="client_id" value="<?php echo $this->session->userdata('client_id'); ?>">
                     <div class="form-group">
                         <label>File </label>
                         <input type="file" name="lead_file" id="lead_file" class="form-control" accept=".pdf, .docx, .pptx, .txt, .xlsx, .rar, .zip, .xlsm, .xls, .csv, .xlsb, .xlw, xltx"  required="">

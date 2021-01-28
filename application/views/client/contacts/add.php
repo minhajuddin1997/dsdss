@@ -29,7 +29,7 @@
               <h3 class="card-title" >Contact Form</h3>
             </div>
             <div class="card-body" style="display: block;">
-              <form role="form" action="<?php echo base_url('client/tasks/add')?>" method="post" enctype="multipart/form-data">
+              <form role="form" action="<?php echo base_url('client/contacts/add')?>" method="post" enctype="multipart/form-data">
                 <div class="box-body">
                     <div class="form-group">
                         <label>Name *</label>
@@ -51,17 +51,14 @@
                       <label for="exampleInputFile">File input</label>
                       <div class="input-group">
                         <div class="custom-file">
-                          <input type="file" class="custom-file-input" id="exampleInputFile">
-                          <label class="custom-file-label" for="exampleInputFile">Choose Image</label>
-                        </div>
-                        <div class="input-group-append">
-                          <span class="input-group-text" id="">Upload</span>
+                          <input type="file" class="custom-file-input" name="display_picture">
+                          <label class="custom-file-label" >Choose Image</label>
                         </div>
                       </div>
                     </div>
                     <div class="form-group">
                         <label>Choose Role</label>
-                        <select name="client_projects_id" class="form-control"  required="">
+                        <select name="role_id" class="form-control"  required="">
                           <?php $records = get_list('role'); 
                           foreach($records as $client): ?>
                             <option value='<?php echo $client->role_id; ?>'><?php echo $client->role_name; ?></option>
@@ -75,7 +72,6 @@
                     </div>
 
                 </div>
-                <input type="hidden" name="phase_id" value="">
                 <div class="box-footer">
                     <button type="submit" class="btn btn-info">Create Task</button>
                 </div>
@@ -99,17 +95,10 @@
             </div>
             <div class="card-body">
               <div class="form-check">
-                <input type="checkbox" class="form-check-input" name="start_date" required>
+                <input type="checkbox" class="form-check-input" name="email_notify" >
                 <label class="form-check-label">
                   Would you like to send invitation email 
                   immediately?
-                </label>
-              </div>
-              <br>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" name="start_date" required>
-                <label class="form-check-label">
-                  Send Welcome Email.
                 </label>
               </div>
             </div>

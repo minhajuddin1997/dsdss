@@ -51,14 +51,16 @@
                         <textarea class="form-control editor" rows="3" id="description" name="description"><?php echo !empty($record->description)?$record->description:''?></textarea>
                     </div>
                 <div class="form-group">
-                    <label>Priority</label>
+                    <label>Assign To</label>
                     <select name="priority" class="form-control">
                         <option value="">Choose Priority</option>
-                        <option value="High">High</option>
-                        <option value="Medium">Medium</option>
-                        <option value="Low">Low</option>
+                        <option value="<?php echo $this->session->userdata('client_id'); ?>">Myself</option>
+                        <?php 
+                          $ss = $this->admin_m->get_list("crm_contacts", array('client_id'=>$this->session->userdata('client_id')));
+                        ?>
 
                     </select>
+                  <?php print_r($ss); ?>
                  </div>
                  <div class="form-group">
                     <label>Status</label>

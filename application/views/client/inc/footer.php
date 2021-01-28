@@ -275,7 +275,7 @@ window.onload = function(){
     // });
 
 
-        (function() {
+      window.onload = function(){
  
         // $input_field = $('#summary_file');
         // $("#summary_file").on('change',function(){
@@ -426,7 +426,7 @@ window.onload = function(){
             // sigImage.setAttribute("src", dataUrl);
         }, false);
 
-    })();
+    };
     
     
     $("#rush").change(function() {

@@ -1,3 +1,8 @@
+<style>
+  #contact_view li {
+    padding: 5px;
+  }
+</style>
 <div class="content-wrapper" style="min-height: 1071.31px;">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -37,24 +42,28 @@
                   <div class="tab-pane text-left fade active show" id="vert-tabs-home" role="tabpanel" aria-labelledby="vert-tabs-home-tab">
                       <!-- Default box -->
                     <div class="row d-flex align-items-stretch">
-                      <?php if(!empty($records)): $i=0; foreach($records as $row): if($row['role_id'] == 2): $i++;?>
-                            <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
+                      <?php if(!empty($records)): $i=0; foreach($records as $row): $i++;?>
+                            <div class="col-12 col-sm-6 col-md-4 align-items-stretch">
                               <div class="card bg-light" >
                                 <div class="card-header text-muted border-bottom-0">
-                                   <?php echo 'Client'; ?>
+                                   <?php echo $row['name']; ?>
                                 </div>
                                 <div class="card-body pt-0" >
                                   <div class="row">
                                     <div class="col-7">
                                       <h2 class="lead"><b><?php echo $row['client_name']; ?></b></h2>
                                       <!--<p class="text-muted text-sm"><b>About: </b> Web Designer / UX / Graphic Artist / Coffee Lover </p>-->
-                                      <ul class="ml-4 mb-0 fa-ul text-muted">
-                                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Address: Demo Street 123, Demo City 04312, NJ</li>
-                                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Phone #: + 800 - 12 12 23 52</li>
+                                      <ul class="ml-4 mb-0 fa-ul text-muted" id="contact_view">
+                                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-globe"></i></span><?php echo $row['website']; ?></li>
+                                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-envelope"></i></span><?php echo $row['email']; ?></li>
+                                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-exclamation-circle"></i></span>
+                                          <?php if($row['status'] == 0) { echo 'Awaiting for Approval'; } else { echo 'Active'; } ?></li>
+                                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-user"></i></span>
+                                          <?php $id = $row['role_id']; echo get_value_by_id('role', $id, 'role_name'); ?></li>
                                       </ul>
                                     </div>
                                     <div class="col-5 text-center">
-                                      <img src="<?php echo base_url(); ?>uploads/client/<?php echo $row['client_image']; ?>" alt="" class="img-circle img-fluid">
+                                      <img src="<?php echo base_url(); ?>uploads/contacts/<?php echo $row['display_picture']; ?>" alt="" class="img-circle img-fluid">
                                     </div>
                                   </div>
                                 </div>
@@ -67,9 +76,7 @@
                                     <a href="#" class="btn btn-sm bg-teal">
                                       <i class="fas fa-comments"></i>
                                     </a>
-                                    <a href="<?php echo base_url('admin/profile/get_client_profile'); ?>/<?php echo $row['client_id']; ?>" class="btn btn-sm btn-primary">
-                                      <i class="fas fa-user"></i> View Profile
-                                    </a>
+                        
                                   </div>
                                 </div>
                               </div>
@@ -78,7 +85,7 @@
                         <!-- /.card-footer -->
                       <!-- /.card -->
                 
-                    <?php endif; endforeach; endif; ?>
+                    <?php endforeach; endif; ?>
                               </div>
                   </div>
                   <div class="tab-pane fade" id="vert-tabs-projectmanager" role="tabpanel" aria-labelledby="vert-tabs-projectmanager-tab">

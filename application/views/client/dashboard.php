@@ -107,6 +107,30 @@
             </div>
             <!-- /.info-box -->
           </div>
+
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box mb-3">
+              <span class="info-box-icon bg-warning elevation-1" ><i class="fas fa-users"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Completed Projects</span>
+                <span class="info-box-number">
+                    <?php
+                        $i=0;
+                        foreach($records as $row):
+                            if($row['complete_status'] == 'completed'):
+                                $i++;
+                                $comp[] = $i;
+                            endif;
+                        endforeach;
+                        echo count($comp);
+                    ?>
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
           <!-- /.col -->
         </div>
         <!-- /.row -->
@@ -126,9 +150,7 @@
                   <button type="button" class="btn btn-tool" data-card-widget="collapse">
                     <i class="fas fa-minus"></i>
                   </button>
-                  <button type="button" class="btn btn-tool" data-card-widget="remove">
-                    <i class="fas fa-times"></i>
-                  </button>
+
                 </div>
               </div>
               <!-- /.card-header -->
@@ -146,6 +168,7 @@
           
         <script>
           var progress = document.getElementById('animationProgress');
+
           var config = {
             type: 'line',
             data: {
@@ -157,12 +180,12 @@
                 backgroundColor: window.chartColors.yellow,
                 data: [
                   2,
-                  randomScalingFactor(),
-                  randomScalingFactor(),
-                  randomScalingFactor(),
-                  randomScalingFactor(),
-                  randomScalingFactor(),
-                  randomScalingFactor()
+                  5,
+                  2,
+                  3,
+                  5,
+                  23,
+                  3
                 ]
               }]
             },
@@ -190,15 +213,7 @@
             window.myLine = new Chart(ctx, config);
           };
 
-          document.getElementById('randomizeData').addEventListener('click', function() {
-            config.data.datasets.forEach(function(dataset) {
-              dataset.data = dataset.data.map(function() {
-                return randomScalingFactor();
-              });
-            });
 
-            window.myLine.update();
-          });
         </script>
                     </div>
                   </div>
@@ -247,6 +262,18 @@
 
               <div class="info-box-content" style="font-size:25px;">
                 <span class="info-box-text">Files</span>
+                <span class="info-box-number">114,381</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+
+            <div class="info-box mb-3" style="padding:2rem;background:url('https://image.freepik.com/free-photo/abstract-yellow-brush-stroke-white-background_23-2147835995.jpg');background-position: -400px 10px;
+              
+            ">
+              <span class="info-box-icon"><i class="fas fa-cloud-download-alt"></i></span>
+
+              <div class="info-box-content" style="font-size:25px;">
+                <span class="info-box-text">Contacts</span>
                 <span class="info-box-number">114,381</span>
               </div>
               <!-- /.info-box-content -->

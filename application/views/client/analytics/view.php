@@ -10,9 +10,9 @@
             <div class="d-flex justify-content-center align-items-center container">
                 <form action="<?php echo base_url('client/analytics'); ?>" method="post" class='form-inline'>
                     <select id="analytics_year" name="analytics_year" class="form-control">
-                        <option value="2019" <?php if(date("Y") == '2019') { echo 'selected'; } ?>>2019</option>
-                        <option value="2020" <?php if(date("Y") == '2020') { echo 'selected'; } ?>>2020</option>
-                        <option value="2021" <?php if(date("Y") == '2021') { echo 'selected'; } ?>>2021</option>
+                        <option value="2019" <?php if($_POST['analytics_year'] == '2019') { echo 'selected'; } ?>>2019</option>
+                        <option value="2020" <?php if($_POST['analytics_year'] == '2020') { echo 'selected'; } ?>>2020</option>
+                        <option value="2021" <?php if($_POST['analytics_year'] == '2021') { echo 'selected'; } ?>>2021</option>
                     </select>
                     &nbsp;
                     <input type='submit' name='submit' class='btn btn-info' value='Filter By Year'>
@@ -153,9 +153,7 @@
                       <button type="button" class="btn btn-tool" data-card-widget="collapse">
                         <i class="fas fa-minus"></i>
                       </button>
-                      <button type="button" class="btn btn-tool" data-card-widget="remove">
-                        <i class="fas fa-times"></i>
-                      </button>
+
                     </div>
                   </div>
                     <div class="card-body"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
@@ -184,15 +182,13 @@
                           <button type="button" class="btn btn-tool" data-card-widget="collapse">
                             <i class="fas fa-minus"></i>
                           </button>
-                          <button type="button" class="btn btn-tool" data-card-widget="remove">
-                            <i class="fas fa-times"></i>
-                          </button>
+                  
                         </div>
                       </div>
                         <div class="card-body">
                             
                             <div class="chart"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-                                <canvas id="flyers" width="560" height="400"></canvas>
+                                <canvas id="seo" width="560" height="400"></canvas>
                             </div>
                         </div>
                       <!-- /.card-body -->
@@ -278,18 +274,18 @@ var myChart = new Chart(ctx2, {
       <?php echo count($records2['web']['07']); ?>, <?php echo count($records2['web']['08']); ?>, <?php echo count($records2['web']['09']); ?>, 
       <?php echo count($records2['web']['10']); ?>, <?php echo count($records2['web']['11']); ?>, <?php echo count($records2['web']['12']); ?>],
       backgroundColor: [
-        'rgba(235, 64, 52, 0.1)',
-        'rgba(235, 64, 52, 0.1)',
-        '#a12f15',
-        '#a12f15',
-        '#a12f15',
-        '#a12f15',
-        '#a12f15',
-        '#a12f15',
-        '#a12f15',
-        '#a12f15',
-        '#a12f15',
-        'rgba(235, 64, 52, 0.3)'
+        'rgba(107, 170, 237, 0.5)',
+        'rgba(107, 170, 237, 0.5)',
+        'rgba(107, 170, 237, 0.5)',
+        'rgba(107, 170, 237, 0.5)',
+        'rgba(107, 170, 237, 0.5)',
+        'rgba(107, 170, 237, 0.5)',
+        'rgba(107, 170, 237, 0.5)',
+        'rgba(107, 170, 237, 0.5)',
+        'rgba(107, 170, 237, 0.5)',
+        'rgba(107, 170, 237, 0.5)',
+        'rgba(107, 170, 237, 0.5)',
+        'rgba(107, 170, 237, 0.5)',
       ],
       borderWidth: 1
     }]
@@ -324,23 +320,23 @@ var myChart = new Chart(creative_chart, {
     labels: ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"],
     datasets: [{
       label: '# of Leads',
-      data: [<?php echo count($records2['web']['01']); ?>, <?php echo count($records2['web']['02']); ?>, <?php echo count($records2['web']['03']); ?>, 
-      <?php echo count($records2['web']['04']); ?>, <?php echo count($records2['web']['05']); ?>, <?php echo count($records2['web']['06']); ?>, 
-      <?php echo count($records2['web']['07']); ?>, <?php echo count($records2['web']['08']); ?>, <?php echo count($records2['web']['09']); ?>, 
-      <?php echo count($records2['web']['10']); ?>, <?php echo count($records2['web']['11']); ?>, <?php echo count($records2['web']['12']); ?>],
+      data: [<?php echo count($records2['creative']['01']); ?>, <?php echo count($records2['creative']['02']); ?>, <?php echo count($records2['creative']['03']); ?>, 
+      <?php echo count($records2['creative']['04']); ?>, <?php echo count($records2['creative']['05']); ?>, <?php echo count($records2['creative']['06']); ?>, 
+      <?php echo count($records2['creative']['07']); ?>, <?php echo count($records2['creative']['08']); ?>, <?php echo count($records2['creative']['09']); ?>, 
+      <?php echo count($records2['creative']['10']); ?>, <?php echo count($records2['creative']['11']); ?>, <?php echo count($records2['creative']['12']); ?>],
       backgroundColor: [
-        'rgba(255, 99, 132)',
-        'rgba(54, 162, 235)',
-        'rgba(255, 206, 86)',
-        'rgba(75, 192, 192)',
-        'rgba(153, 102, 255)',
-        'rgba(255, 159, 64)',
-        'rgba(255, 99, 132)',
-        'rgba(54, 162, 235)',
-        'rgba(255, 206, 86)',
-        '#333',
-        '#333',
-        '#333'
+        'rgba(195, 128, 237, 0.5)',
+        'rgba(195, 128, 237, 0.5)',
+        'rgba(195, 128, 237, 0.5)',
+        'rgba(195, 128, 237, 0.5)',
+        'rgba(195, 128, 237, 0.5)',
+        'rgba(195, 128, 237, 0.5)',
+        'rgba(195, 128, 237, 0.5)',
+        'rgba(195, 128, 237, 0.5)',
+        'rgba(195, 128, 237, 0.5)',
+        'rgba(195, 128, 237, 0.5)',
+        'rgba(195, 128, 237, 0.5)',
+        'rgba(195, 128, 237, 0.5)'
       ],
       borderWidth: 1
     }]
@@ -375,23 +371,28 @@ var myChart = new Chart(flyers_chart, {
     labels: ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"],
     datasets: [{
       label: '# of Leads',
-      data: [<?php echo count($records2['web']['01']); ?>, <?php echo count($records2['web']['02']); ?>, <?php echo count($records2['web']['03']); ?>, 
-      <?php echo count($records2['web']['04']); ?>, <?php echo count($records2['web']['05']); ?>, <?php echo count($records2['web']['06']); ?>, 
-      <?php echo count($records2['web']['07']); ?>, <?php echo count($records2['web']['08']); ?>, <?php echo count($records2['web']['09']); ?>, 
-      <?php echo count($records2['web']['10']); ?>, <?php echo count($records2['web']['11']); ?>, <?php echo count($records2['web']['12']); ?>],
+      data: [<?php echo !empty(count($records2['flyers']['01'])) ? count($records2['flyers']['01']) : count($records2['flyers']['1']); ?>, <?php echo !empty(count($records2['flyers']['02'])) ? count($records2['flyers']['02']) : count($records2['flyers']['2']); ?>, 
+        <?php echo !empty(count($records2['flyers']['03'])) ? count($records2['flyers']['03']) : count($records2['flyers']['3']); ?>, 
+        <?php echo !empty(count($records2['flyers']['04'])) ? count($records2['flyers']['04']) : count($records2['flyers']['4']); ?>, 
+        <?php echo !empty(count($records2['flyers']['05'])) ? count($records2['flyers']['05']) : count($records2['flyers']['5']); ?>, 
+        <?php echo !empty(count($records2['flyers']['06'])) ? count($records2['flyers']['06']) : count($records2['flyers']['6']); ?>, 
+        <?php echo !empty(count($records2['flyers']['07'])) ? count($records2['flyers']['07']) : count($records2['flyers']['7']); ?>, 
+        <?php echo !empty(count($records2['flyers']['08'])) ? count($records2['flyers']['08']) : count($records2['flyers']['8']); ?>, 
+        <?php echo !empty(count($records2['flyers']['09'])) ? count($records2['flyers']['09']) : count($records2['flyers']['9']) ; ?>, 
+      <?php echo count($records2['flyers']['10']); ?>, <?php echo count($records2['flyers']['11']); ?>, <?php echo count($records2['flyers']['12']); ?>],
       backgroundColor: [
-        'rgba(255, 99, 132)',
-        'rgba(54, 162, 235)',
-        'rgba(255, 206, 86)',
-        'rgba(75, 192, 192)',
-        'rgba(153, 102, 255)',
-        'rgba(255, 159, 64)',
-        'rgba(255, 99, 132)',
-        'rgba(54, 162, 235)',
-        'rgba(255, 206, 86)',
-        '#333',
-        '#333',
-        '#333'
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)'
       ],
       borderWidth: 1
     }]
@@ -419,34 +420,89 @@ var myChart = new Chart(flyers_chart, {
 });
 
 
-    var donutChartCanvas = $('#donutChart').get(0).getContext('2d')
-    var donutData        = {
-      labels: [
-          'Flyers Leads',
-          'Logo Leads',
-          'Creative Content Leads',
-          'Web Leads',
-          'SEO Leads'
+var seo_chart = document.getElementById("seo");
+var myChart = new Chart(seo_chart, {
+  type: 'bar',
+  data: {
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"],
+    datasets: [{
+      label: '# of Leads',
+      data: [<?php echo !empty(count($records2['seo']['01'])) ? count($records2['seo']['01']) : count($records2['seo']['1']); ?>, 
+      <?php echo !empty(count($records2['seo']['02'])) ? count($records2['seo']['02']) : count($records2['seo']['2']); ?>, 
+      <?php echo !empty(count($records2['seo']['03'])) ? count($records2['seo']['03']) : count($records2['seo']['3']); ?>, 
+      <?php echo !empty(count($records2['seo']['04'])) ? count($records2['seo']['04']) : count($records2['seo']['4']); ?>, 
+      <?php echo !empty(count($records2['seo']['05'])) ? count($records2['seo']['05']) : count($records2['seo']['5']); ?>, 
+      <?php echo !empty(count($records2['seo']['06'])) ? count($records2['seo']['06']) : count($records2['seo']['6']); ?>, 
+      <?php echo !empty(count($records2['seo']['07'])) ? count($records2['seo']['07']) : count($records2['seo']['7']); ?>, 
+      <?php echo !empty(count($records2['seo']['08'])) ? count($records2['seo']['08']) : count($records2['seo']['8']); ?>, 
+      <?php echo !empty(count($records2['seo']['09'])) ? count($records2['seo']['09']) : count($records2['seo']['9']); ?>, 
+      <?php echo count($records2['seo']['10']); ?>, <?php echo count($records2['seo']['11']); ?>, <?php echo count($records2['seo']['12']); ?>],
+      backgroundColor: [
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)',
+        'rgba(232, 176, 97, 0.5)',
       ],
-      datasets: [
-        {
-          data: [<?php echo $records['flyer']['count']; ?>,<?php echo $records['logo']['count']; ?>,<?php echo $records['creative']['count']; ?>,<?php echo $records['web']['count']; ?>,<?php echo $records['seo']['count']; ?>],
-          backgroundColor : ['#eba834', '#9e6503', '#edc40c', '#a12f15','#79d606'],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    responsive: true,
+    scales: {
+      xAxes: [{
+        ticks: {
+          maxRotation: 90,
+          minRotation: 80
+        },
+          gridLines: {
+          offsetGridLines: true // à rajouter
         }
-      ]
+      },
+   ],
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
     }
-    var donutOptions     = {
-      maintainAspectRatio : false,
-      responsive : true,
-    }
-    //Create pie or douhnut chart
-    // You can switch between pie and douhnut using the method below.
-    var donutChart = new Chart(donutChartCanvas, {
-      type: 'doughnut',
-      data: donutData,
-      options: donutOptions
-    })
- 
+  }
+});
 
+var donutChartCanvas = $('#donutChart').get(0).getContext('2d')
+var donutData        = {
+  labels: [
+      'Flyers Leads',
+      'Logo Leads',
+      'Creative Content Leads',
+      'Web Leads',
+      'SEO Leads'
+  ],
+  datasets: [
+    {
+      data: [<?php echo $records['flyer']['count']; ?>,<?php echo $records['logo']['count']; ?>,<?php echo $records['creative']['count']; ?>,<?php echo $records['web']['count']; ?>,<?php echo $records['seo']['count']; ?>],
+      backgroundColor : ['#e8b061', '#fa618a', '#c380ed', '#6baaed','#eda807'],
+    }
+  ]
+}
+var donutOptions     = {
+  maintainAspectRatio : false,
+  responsive : true,
+}
+//Create pie or douhnut chart
+// You can switch between pie and douhnut using the method below.
+var donutChart = new Chart(donutChartCanvas, {
+  type: 'doughnut',
+  data: donutData,
+  options: donutOptions
+})
+ 
 });
   </script>

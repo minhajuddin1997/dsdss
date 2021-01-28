@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 27, 2021 at 12:41 PM
+-- Generation Time: Jan 28, 2021 at 01:30 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.8
 
@@ -90,29 +90,8 @@ CREATE TABLE `client` (
 --
 
 INSERT INTO `client` (`client_id`, `role_id`, `client_name`, `client_email`, `client_phone_number`, `client_company`, `client_website`, `client_address`, `client_image`, `client_cover_image`, `client_city`, `client_state`, `client_country`, `client_password`, `forgot_password_token`, `pass_change_notification`, `client_status`, `client_login_detail`, `last_login`, `online_status`, `client_date`, `login_times`) VALUES
-(1, 2, 'Usmanss', 'muhammad.minhaj@technado.co', '321-3123223', 'Pakistan', 'http://outsourceinpakistan.com/', 'Gulistan-e-Jauhar', 'Open-Email-for-blog-iStock-8600074126.jpg', 'Packaging31.png', 'Karachi', 'Sindh', 'Pakistan', '12345', '', 'Please change your password if you are logged in for first time', 0, 'enable', '2021-01-27 06:56:09', 'yes', '2020-07-07 23:33:17', 89),
-(2, 2, 'Sasha Johnson', 'sashafergusonatc@gmail.com', '(242) 425-2139', 'Game Plan Sports Medicine Services.', '', '', 'WhatsApp_Image_2020-07-09_at_9_04_48_PM.jpeg', '', 'Nassau', 'NP', 'Bahamas', 'a4750d1ef932f67f9ca82c642cc418ed291030ccdbb3b20537f49cf8cb277af38e76b0dd748d5b90cdcf23d4cbc56c8f7a4f6497f9d09878896de0aa234dce0bEBJTOmwlUzrPsIasWQjcIG7M0UMJECGqmS38SlOYUqw=', '', 'Please change your password if you are logged in for first time', 1, 'enable', '2020-07-14 03:25:24', NULL, '2020-07-14 03:25:24', 0),
-(3, 4, 'Jumping Jack', 'jack@plutoprojects.net', '13477219117', 'United States of America', 'https://www.jumpingjacktaxes.com/', '3877 Dungan Street', 'blank-profile-picture-973460_960_720.png', '', 'Philadelphia', 'PA', 'United States of America', '123', '', 'Please change your password if you are logged in for first time', 1, 'enable', '2020-12-09 02:55:11', 'no', '2020-07-16 03:11:57', 2),
-(4, 4, 'Latisha McKellar', 'lmckellar@taxontrac.com', '6468688834', 'United States of America', 'https://taxontrac.com', '693 E. 236th Street STR 2', 'online_icon.png', '', 'Bronx', 'New York', 'United States of America', 'acdd65f4a8b795aaee857cbc22075c32fcf79f2276b4d6e6ca181b070f7dc8945954a0c1133beaadfd7e45a0ad5caa2108d68683d7a62abe39750127a92c3d90sSKeLnkT20nEJ/w9LzXSvpqD3K23QWtQ+YrfcEdRelA=', '', 'Please change your password if you are logged in for first time', 1, 'enable', '2020-08-21 18:46:53', '', '2020-07-28 22:36:10', 0),
-(5, 0, 'Daprof Shakur', 'contact@shotsbydmp.info', '9294547664', 'DaProf’s Media Productions', 'https://shotsbydmp.com/', '', '780929_-_Pluto_Pet_Robot_Mascot.png', '', 'Bronx', 'New York', 'United States of America', 'fc1173c9198bdd36ddfe17ffac6f81c6a02be9c906ab70f3af383b26f22b95686a6f7a92f9f0ecb93c61d4de1aa9e3801de2c0177d5d97d99a1caf9bc5abae57layr1hLrRa7oQtdovhblzqnMyjw7vLdwLmZNkHNIvGk=', '', 'Please change your password if you are logged in for first time', 0, 'enable', '2020-07-29 19:05:14', '', '2020-07-28 23:31:59', 0),
-(6, 0, 'Stephanie Joyner', 'brighterdaytaxes.financial@gmail.com', '2679780138', 'United States of America', 'brighterdayfinancials.com', '2534 N, Broad Street & Huntingdon, Suite 30, Philadelphia, ', '780929_-_Pluto_Pet_Robot_Mascot.png', '', 'Philadelphia', 'Pennsylvania', 'United States of America', 'd9e4eead2b56fc42ca71777e50afe9b695d3417caa211b7a59092c977ed61447f99d4d82cc2b19a53f5727a8dcd43e8e2a67eba9a75e4b78097a2633436bbfdfABYYm9k6CXSSUjaECx7ZMUb+Q7a0Wz9SB+a/jScp07E=', '', 'Please change your password if you are logged in for first time', 0, 'enable', '2020-07-31 14:58:19', '', '2020-07-29 02:32:30', 0),
-(7, 0, 'Tiffany Woodson', 'twoodson82@gmail.com', '1234567890', 'Woodson Management', '', '', '780929_-_Pluto_Pet_Robot_Mascot.png', '', '', '', 'United States of America', '1ae6706ad42b7a80bbb95f32d70375154296bf2ab0c075fc451e85ab0d8d2e7e3689142bcc3e78cb7e27046c61f7d76055c784e943f70ab8834c5ce72e9ecc62Lgnkqyy+0TjIX93eRvqMKsb6TCyNFz2gAVRLodzlgu0=', '', 'Please change your password if you are logged in for first time', 0, 'enable', '2020-07-29 06:32:49', NULL, '2020-07-29 06:32:49', 0),
-(8, 0, 'Keith Thompson', 'keith@atltaxman.tax', '1234567890', '', 'atltaxman.tax', '', '780929_-_Pluto_Pet_Robot_Mascot.png', '', '', '', 'United States of America', '125718a312a5fd009c15323d6af53a27ea21763e8e26a2dd0bcc48caa560e6936e310f94a2eadcad79d1382fe0cdf893f80a18ec42c1e2cb037d1f423999c4f1OqC21p4OkuxUs4/8AiymjrrX7Ldkn+L4gMSpO2odtfM=', '', 'Please change your password if you are logged in for first time', 0, 'enable', '2020-08-05 22:34:55', '', '2020-07-29 06:34:40', 0),
-(9, 0, 'Treyvion Webb', 'webbtrey2@gmail.com', '1234567890', 'Prime Start Taxes', 'primestarttaxes.com', '', '780929_-_Pluto_Pet_Robot_Mascot.png', '', '', '', 'United States of America', 'ef5ce65e1ee97dc866f9485d8b33a7a5f9d823960dd606b7c48457548192892f4c66d80285f4ca3637131df360f4f84fc890677db527a6f53657caea58a949b9+20eH0mnvUbOHmOzlpiDZO7AuT0EkFJOfQPwpidUvSA=', '', 'Please change your password if you are logged in for first time', 0, 'enable', '2020-07-29 06:41:22', NULL, '2020-07-29 06:41:22', 0),
-(10, 0, 'Mike Soyfer', 'mike@soyfer.com', '1234567890', 'NY Landlords', 'nylandlords.com', '', '780929_-_Pluto_Pet_Robot_Mascot.png', '', '', '', 'United States of America', '2fe884fdc5deb5a9384007ea108f1e088313dd5de72bd32833d8fa439f55e19b10612592b7ed2289ddb97f4abb9c09b5eed140cf2828ecfe94e722b922dec4edVh/C3sxlJ1eRte6QJ5nmSnuKmaNCrdJDJkGe1kGT54g=', '', 'Please change your password if you are logged in for first time', 0, 'enable', '2020-07-29 07:04:52', NULL, '2020-07-29 07:04:52', 0),
-(11, 0, 'Jumping Jack', 'don@jacktaxes.com', '1234567890', 'Jumping Jack Tax', 'https://www.jumpingjacktaxes.com/', '3877 Dungan Street', 'favicon.png', '', 'Philadelphia', 'Pennsylvania', 'United States of America', 'd2caed9447511c69a0c7fa5fe8d9c798f7d61be52d8837385e4057637d9bcb139aa3b430ead0bcb6f37b31df09e5677282ca2915b3e8be6ed35622b9effee4a4cx3+Ce72McCrBizXosj/u6jP/4rISFZ5xD0oGmj8zCw=', '', 'Please change your password if you are logged in for first time', 0, 'enable', '2020-08-27 13:58:12', '', '2020-07-29 07:16:22', 0),
-(12, 0, 'Keith Thompson', 'zar.huss786@gmail.com', '7185507179', '', '', '', 'blank-profile-picture-973460_960_720.png', '', '', '', 'United States of America', 'a53c388589d065022bdb2b99a82b339b4ff9c963c4bcca3076a2ef7708602330faddf3e56504856d6512c610e1412fc13932b0eb456131339db9ffdd868b0a79E8aEnYhn/hsh6Uv3WpLH3B2dSg3FC2z7RUExBtScJlQ=', '', 'Please change your password if you are logged in for first time', 1, 'enable', '2020-08-05 22:32:35', NULL, '2020-08-05 22:32:35', 0),
-(13, 0, 'Cariann Marie', 'Cariannx806@gmail.com', '3476714706', '', '', '', 'blank-profile-picture-973460_960_720.png', '', '', '', 'United States of America', 'ada3c42b128a1d0838eaedb974bf0ba05c8aa20ea60a41a1f76e11046550864f0102975edb59bf2e5f8bf04c34bce752039210cbceb914d62d698cbfb3561644IAOago/f5jTDDtkhAcSrWgoY4tHhmwzGUaI4XMeskB0=', '', 'Please change your password if you are logged in for first time', 1, 'enable', '2020-08-14 01:26:48', '', '2020-08-14 01:22:14', 0),
-(14, 0, 'Zar Test', 'Yolo123@yahoo.com', '2345678901', '', '', '', 'blank-profile-picture-973460_960_720.png', '', '', '', 'United States of America', '3dadd910df8ff574be1ccd1cedc7534b49313e181db4c1c8da1a66a3ffd2e4dbb89335f1faceb746ca2aef8cfa4b88b414e5b9c30e7df4982e046606bb08b2fe+vwGMBK/OKoVh0pbqGUJyIBycuNgl4TQJAs5pcKJdyQ=', '', 'Please change your password if you are logged in for first time', 1, 'enable', '2020-08-17 17:11:11', '', '2020-08-17 17:10:14', 0),
-(15, 0, 'Robyia Spriggins', 'robyia@elitefinancial.solutions', '9732074060', 'Elite Financial Solutions', 'elitefinancial.solutions', '', '780929_-_Pluto_Pet_Robot_Mascot.png', '', 'Clark', 'New Jersey', 'United States of America', '9644472639c14591ec1f8ea39a74a41bae55c7ec094380f777939211fe611f62c92643117e2cb331982fe633c66770c1e37c4928a36ed8bac7c931b8ed6621d1tAI9NX6Xk+DKkrILaED1bT89ts9LBvSRDI7A+Gbwlos=', '', 'Please change your password if you are logged in for first time', 0, 'enable', '2020-08-21 20:36:50', '', '2020-08-21 20:17:41', 0),
-(16, 0, 'Aqiyla McLean', 'info@aplusstaxes.com', '7185179212', 'United States of America', 'https://www.aplusstaxes.com/', 'Brooklyn, NY', '780929_-_Pluto_Pet_Robot_Mascot.png', '', 'Brooklyn', 'New York', 'United States of America', '7162c2fc986b698cb4b576dfd86a3c2d448a8bb7d03687d6e5d844a145a1d94f0056dcd9bbbf0202291dd2c43f5a41516e5e55878ed6fbb3fa4623658a6c9375ZEbisXUks+c2zg1eHukfwhODlkMFzRSADF4QND3oDWY=', '', 'Please change your password if you are logged in for first time', 0, 'enable', '2020-08-26 19:17:00', '', '2020-08-25 01:29:12', 0),
-(18, 0, 'Nabeel Baig', 'nabeel.baig@technado.co', '03333906233', 'plutoprojects', 'https://plutoprojects.net/', 'H-104, Rufi Green City, Block-18, Gulistan-e-Jauhar', 'blank-profile-picture-973460_960_720.png', '', 'Karachi', 'Sindh', 'Pakistan', 'f216a9e0b86921373f71734bb792cd997bdcbc93130f67df6e8aad2e2dd052ade39d9500337c734c3615e5e3cb5f9941a1f25a597165ea76925088b072ef178ej5yRLPqvmSgMU19BV1fHwRblDaSKmJWJ53aPGn5iH1o=', '', 'Please change your password if you are logged in for first time', 0, 'enable', '2020-08-26 18:10:44', '', '2020-08-26 18:07:48', 0),
-(19, 5, 'umar arain', 'umer.mansoor@technado.co', '9999999999', '', '', '76Street, 13', 'blank-profile-picture-973460_960_720.png', '', 'calforonia', 'Alaska', 'Pakistan', 'e9e1b75eb55ce4a1d4fcbe36722dbbb14e55226594b19be2f5f5e8d6c1efe5c7b79829de16132e477c60dcfd247c434fe6253beecf99acb75e50f074a58eb5c9z9CnvkAWDTd8rAHyWXPN8mAdyLa+HuQQu644sh173eM=', '', 'Please change your password if you are logged in for first time', 0, 'enable', '2020-11-16 21:00:23', '', '2020-08-27 16:16:36', 0),
-(20, 0, 'Changeies khan', 'uarain229@gmail.com', '23213232', 'tech', '', 'mangolia street 8', 'blank-profile-picture-973460_960_720.png', '', 'kkirea', 'olpio', 'Mongolia', 'e9e1b75eb55ce4a1d4fcbe36722dbbb14e55226594b19be2f5f5e8d6c1efe5c7b79829de16132e477c60dcfd247c434fe6253beecf99acb75e50f074a58eb5c9z9CnvkAWDTd8rAHyWXPN8mAdyLa+HuQQu644sh173eM=', '', 'Please change your password if you are logged in for first time', 0, 'enable', '2020-08-27 22:25:41', '', '2020-08-27 20:05:09', 0),
-(145, 0, 'test', 'uzair.haseeb@outsourceinpakistan.com', '', 'test', 'https://test.com', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'Please change your password if you are logged in for first time', 1, 'disable', '2021-01-25 22:38:39', NULL, '2021-01-26 06:38:39', 0),
-(146, 0, 'test', 'minhajchamp@gmail.com', '', 'test', 'https://test.com', NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, 'Please change your password if you are logged in for first time', 1, 'disable', '2021-01-25 22:38:58', NULL, '2021-01-26 06:38:58', 0),
-(149, 2, 'test', 'test@g.com', '21321', 'sadsa', 'https://test.com', 'dasdsa', NULL, NULL, NULL, NULL, 'Åland Islands', '123', NULL, 'Please change your password if you are logged in for first time', 1, 'enable', '2021-01-26 21:44:48', NULL, '2021-01-27 05:44:48', 0),
-(150, 2, 'ddsad', 'muhammad.sminhaj@technado.co', '321321', 'sdsa', 'https://test.com', 'dasd', NULL, NULL, NULL, NULL, 'Albania', '123', NULL, 'Please change your password if you are logged in for first time', 1, 'enable', '2021-01-26 21:54:15', NULL, '2021-01-27 05:54:15', 0);
+(1, 2, 'Usmanss', 'muhammad.minhaj@technado.co', '321-3123223', 'Pakistan', 'http://outsourceinpakistan.com/', 'Gulistan-e-Jauhar', 'Open-Email-for-blog-iStock-8600074126.jpg', 'Packaging31.png', 'Karachi', 'Sindh', 'Pakistan', '12345', '', 'Please change your password if you are logged in for first time', 0, 'enable', '2021-01-28 10:40:05', 'no', '2020-07-07 23:33:17', 93),
+(150, 2, 'ddsad', 'muhammad.sminhaj@technado.co', '321-321', 'sdsa', 'https://test.com', 'dasd', '1572855258-graphicdesignsoftware.jpg', '5fnmwej4taa-helloquence-3-1024x683-1024x585.jpg', NULL, NULL, 'Albania', '123', NULL, 'Please change your password if you are logged in for first time', 1, 'enable', '2021-01-28 11:39:12', 'yes', '2021-01-27 05:54:15', 2);
 
 -- --------------------------------------------------------
 
@@ -286,9 +265,19 @@ CREATE TABLE `crm_contacts` (
   `email` varchar(100) NOT NULL,
   `company` varchar(100) DEFAULT NULL,
   `website` text DEFAULT NULL,
-  `circle_id` int(11) DEFAULT NULL,
-  `display_picture` text DEFAULT NULL
+  `display_picture` text DEFAULT NULL,
+  `status` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `crm_contacts`
+--
+
+INSERT INTO `crm_contacts` (`id`, `client_id`, `role_id`, `name`, `email`, `company`, `website`, `display_picture`, `status`) VALUES
+(1, 150, 2, 'test', 'test@g.com', 'test', 'test.com', '5fnmwej4taa-helloquence-3-1024x683-1024x58519.jpg', 1),
+(2, 150, 2, 'test', 'test@g.com', 'test', 'test.com', '5fnmwej4taa-helloquence-3-1024x683-1024x58520.jpg', 0),
+(3, 150, 3, 'dsad', 'muhammad.minhaj@technado.co', 'dasda', 'd', '5fnmwej4taa-helloquence-3-1024x683-1024x58520.jpg', 0),
+(4, 150, 2, 'dasd', 'muhammad.minhaj@technado.co', 'dsad', 'dsada', '1572855258-graphicdesignsoftware12.jpg', 0);
 
 -- --------------------------------------------------------
 
@@ -406,7 +395,8 @@ INSERT INTO `kanban` (`id`, `task_id`, `task_name`, `description`, `status`, `pr
 (1, 1, 'test', '', 'red', 'false'),
 (2, 2, 'dasd', '', 'blue', 'false'),
 (3, 3, 'dasdas', '', 'blue', 'false'),
-(4, 4, 'dd', '', 'green', 'false');
+(4, 4, 'dd', '', 'green', 'false'),
+(5, 5, 'f', '', 'green', 'false');
 
 -- --------------------------------------------------------
 
@@ -416,6 +406,7 @@ INSERT INTO `kanban` (`id`, `task_id`, `task_name`, `description`, `status`, `pr
 
 CREATE TABLE `leads` (
   `id` int(11) NOT NULL,
+  `client_id` int(11) NOT NULL,
   `lead_name` varchar(50) NOT NULL,
   `lead_type` varchar(255) DEFAULT NULL,
   `status` enum('0','1','','') DEFAULT '1',
@@ -427,15 +418,24 @@ CREATE TABLE `leads` (
 -- Dumping data for table `leads`
 --
 
-INSERT INTO `leads` (`id`, `lead_name`, `lead_type`, `status`, `upload_year`, `upload_month`) VALUES
-(1, 'test', 'logo', '1', '2021', '12'),
-(2, 'test2', 'web', '1', '2021', '11'),
-(3, 'tess', 'logo', '1', '2021', '12'),
-(4, 'dsd', 'web', '1', '2021', '12'),
-(5, 'dsd', 'web', '1', '2021', '12'),
-(15, 'test', 'web', '1', '2021', '01'),
-(16, 'creative', 'creative', '1', '2021', '01'),
-(17, 'seo', 'seo', '1', '2021', '01');
+INSERT INTO `leads` (`id`, `client_id`, `lead_name`, `lead_type`, `status`, `upload_year`, `upload_month`) VALUES
+(1, 1, 'test', 'logo', '1', '2021', '12'),
+(2, 1, 'test2', 'web', '1', '2021', '11'),
+(3, 1, 'tess', 'logo', '1', '2021', '12'),
+(4, 1, 'dsd', 'web', '1', '2021', '12'),
+(5, 1, 'dsd', 'web', '1', '2021', '12'),
+(15, 1, 'test', 'web', '1', '2021', '01'),
+(16, 1, 'creative', 'creative', '1', '2021', '01'),
+(17, 1, 'seo', 'seo', '1', '2021', '01'),
+(18, 1, 'Test Lead 1', 'web', '1', '2021', '11'),
+(19, 1, 'Test Lead 2', 'flyers', '1', '2021', '12'),
+(20, 1, 'Test Lead 3', 'flyers', '1', '2021', '12'),
+(21, 1, 'Test Lead 4', 'flyers', '1', '2021', '12'),
+(22, 1, 'Test Lead 5', 'flyers', '1', '2021', '5'),
+(23, 1, 'Test Lead 6', 'logo', '1', '2021', '4'),
+(24, 1, 'Test Lead 7', 'logo', '1', '2021', '3'),
+(25, 1, 'Test Lead 8', 'logo', '1', '2021', '2'),
+(26, 1, 'Test Lead 9', 'seo', '1', '2021', '02');
 
 -- --------------------------------------------------------
 
@@ -494,36 +494,16 @@ INSERT INTO `market` (`id`, `lead_name`, `lead_type`, `status`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `master_admin`
+-- Table structure for table `notifications`
 --
 
-CREATE TABLE `master_admin` (
-  `master_admin_id` int(11) UNSIGNED NOT NULL,
-  `role_id` int(11) DEFAULT NULL,
-  `master_admin_name` varchar(50) DEFAULT NULL,
-  `master_admin_email` varchar(50) DEFAULT NULL,
-  `master_admin_phone` varchar(50) DEFAULT NULL,
-  `master_admin_designation` varchar(50) DEFAULT NULL,
-  `master_admin_password` varchar(255) DEFAULT NULL,
-  `master_admin_rest_token` varchar(255) NOT NULL,
-  `master_admin_address` varchar(255) DEFAULT NULL,
-  `master_admin_image` varchar(255) DEFAULT NULL,
-  `master_admin_status` enum('enable','disable') DEFAULT NULL,
-  `master_admin_created_by` int(11) DEFAULT NULL,
-  `master_admin_created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `master_admin_updated_by` int(11) DEFAULT NULL,
-  `master_admin_updated_at` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `master_admin`
---
-
-INSERT INTO `master_admin` (`master_admin_id`, `role_id`, `master_admin_name`, `master_admin_email`, `master_admin_phone`, `master_admin_designation`, `master_admin_password`, `master_admin_rest_token`, `master_admin_address`, `master_admin_image`, `master_admin_status`, `master_admin_created_by`, `master_admin_created_at`, `master_admin_updated_by`, `master_admin_updated_at`) VALUES
-(1, 1, 'Arsalan', 'admin@admin.com', '(222) 222-2222', 'CEO', '44f707cd808af092016f063dae2789b96695dd0be082ab3a98a6eaec0569e0d48f60cffa44e014f2877be12431d91987336014495732a828104d735ec4327e6fIqK5HQs1QdyaZ2EgMrwoisa1hgRnJGti1Zxq6DGIa7c=', '201805312F017A74C0F9A14CE8D666058C35742503C4B5705B0F46C27E976', 'RJ Shopping Mall, Karachi', 'avatar04.png', 'enable', 1, '2019-05-20 20:25:50', 1, '2019-05-25 23:11:52'),
-(6, 5, 'Hassan', 'hassan@vendor.com', '(000) 000-0000', 'test designation', '44f707cd808af092016f063dae2789b96695dd0be082ab3a98a6eaec0569e0d48f60cffa44e014f2877be12431d91987336014495732a828104d735ec4327e6fIqK5HQs1QdyaZ2EgMrwoisa1hgRnJGti1Zxq6DGIa7c=', '', 'test', 'user.png', 'enable', 1, '2020-10-13 20:18:35', 1, '2020-10-14 05:22:35'),
-(7, 5, 'Ali', 'ali@vendor.com', '03495956432', 'abc designation', '13890c9b34f77aa53bbe9acf47030a8385cedcc5342a4a1f47a30c63fd1bccac5feee7e892305ebab81938d6993af21ac001cad536688a49f4c5ab5f1e5cdf19X493cnHjkxGd7QvApTeHqsGPL12ZKg106p8xpHKX1vY=', '', 'testtest', NULL, 'enable', 1, '2020-10-14 01:52:28', NULL, '0000-00-00 00:00:00'),
-(8, 5, 'Muhammad Hassan', 'altaf@vendor.com', '03495656565', 'test', '085908d2b0d2e3f260c1c7030863f479ae2e2fa77815e656c5b5fbaa8c12216e019df28cb60759b07fd403dba2283b063ecd11f9d39d5c42a024b48c0c4ab791rzYACZyxTGDj6NJhsAsl8C9LmDCRgAj5aJ4y4JOd/QI=', '', '`testtest', NULL, 'disable', 1, '2020-10-14 01:55:05', NULL, '0000-00-00 00:00:00');
+CREATE TABLE `notifications` (
+  `notification_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `notification_type` varchar(50) NOT NULL,
+  `notification_status` enum('read','unread','','') NOT NULL,
+  `added_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -606,6 +586,7 @@ INSERT INTO `projects_files` (`projects_files_id`, `projects_files_file`, `exten
 CREATE TABLE `projects_tasks` (
   `projects_tasks_id` int(11) NOT NULL,
   `client_id` int(11) NOT NULL,
+  `assigned_to` int(11) NOT NULL,
   `client_projects_id` int(11) NOT NULL,
   `task_name` varchar(100) NOT NULL,
   `priority` enum('High','Medium','Low','') NOT NULL,
@@ -625,10 +606,12 @@ CREATE TABLE `projects_tasks` (
 -- Dumping data for table `projects_tasks`
 --
 
-INSERT INTO `projects_tasks` (`projects_tasks_id`, `client_id`, `client_projects_id`, `task_name`, `priority`, `description`, `status`, `phase_id`, `start_date`, `due_date`, `ip_address`, `browser`, `os`, `server_time`, `task_status`) VALUES
-(1, 1, 343, 'test', '', 'test', 'Completed', 0, '2021-01-26', '2021-01-26', NULL, NULL, NULL, NULL, 0),
-(2, 1, 343, 'new', '', 'tes', 'Completed', 0, '2021-01-21', '2021-01-26', NULL, NULL, NULL, NULL, 0),
-(3, 1, 343, 'dsad', '', 'dsadsa', 'Completed', 0, '2021-01-22', '2021-01-26', NULL, NULL, NULL, NULL, 0);
+INSERT INTO `projects_tasks` (`projects_tasks_id`, `client_id`, `assigned_to`, `client_projects_id`, `task_name`, `priority`, `description`, `status`, `phase_id`, `start_date`, `due_date`, `ip_address`, `browser`, `os`, `server_time`, `task_status`) VALUES
+(1, 1, 1, 343, 'test', '', 'test', 'Completed', 0, '2021-01-26', '2021-01-26', NULL, NULL, NULL, NULL, 0),
+(2, 1, 150, 343, 'new', '', 'tes', 'Completed', 0, '2021-01-21', '2021-01-26', NULL, NULL, NULL, NULL, 0),
+(3, 1, 1, 343, 'dsad', '', 'dsadsa', 'Completed', 0, '2021-01-22', '2021-01-26', NULL, NULL, NULL, NULL, 0),
+(4, 1, 1, 344, 'dsadsa', '', 'dasdsa', 'Completed', 0, '2021-01-14', '2021-01-27', NULL, NULL, NULL, NULL, 1),
+(5, 1, 1, 344, 'dsadsa', '', 'dasda', 'Pending', 0, '2021-01-09', '2021-01-22', NULL, NULL, NULL, NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -910,10 +893,10 @@ ALTER TABLE `market`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `master_admin`
+-- Indexes for table `notifications`
 --
-ALTER TABLE `master_admin`
-  ADD PRIMARY KEY (`master_admin_id`);
+ALTER TABLE `notifications`
+  ADD PRIMARY KEY (`notification_id`);
 
 --
 -- Indexes for table `packages`
@@ -1037,7 +1020,7 @@ ALTER TABLE `comments_images`
 -- AUTO_INCREMENT for table `crm_contacts`
 --
 ALTER TABLE `crm_contacts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `default_available`
@@ -1061,13 +1044,13 @@ ALTER TABLE `developer`
 -- AUTO_INCREMENT for table `kanban`
 --
 ALTER TABLE `kanban`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `leads`
 --
 ALTER TABLE `leads`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `main_department`
@@ -1082,10 +1065,10 @@ ALTER TABLE `market`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table `master_admin`
+-- AUTO_INCREMENT for table `notifications`
 --
-ALTER TABLE `master_admin`
-  MODIFY `master_admin_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+ALTER TABLE `notifications`
+  MODIFY `notification_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `packages`
@@ -1109,7 +1092,7 @@ ALTER TABLE `projects_files`
 -- AUTO_INCREMENT for table `projects_tasks`
 --
 ALTER TABLE `projects_tasks`
-  MODIFY `projects_tasks_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `projects_tasks_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `project_additional`
